@@ -1,42 +1,206 @@
-[object Object],
-,[object Object],
-,[object Object],
-,[object Object],
-,[object Object],
-,[object Object],Mileage Log,[object Object],
+<!DOCTYPE ,[object Object],>
+<,[object Object],>
+<,[object Object],>
+<,[object Object], ,[object Object],=,[object Object],>
+<,[object Object], ,[object Object],=,[object Object], ,[object Object],=,[object Object],>
+<,[object Object],>Mileage Log</,[object Object],>
 
-,[object Object],[object Object],[object Object],
-,[object Object],
+<,[object Object],>
+,[object Object], {
+    ,[object Object],: -apple-system, BlinkMacSystemFont, sans-serif;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+}
 
-,[object Object],
-,[object Object],
+,[object Object], {
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: auto;
+}
 
-,[object Object],Daily Mileage Log,[object Object],
-,[object Object],[object Object],
+,[object Object], {
+    ,[object Object],: white;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object], ,[object Object], ,[object Object], ,[object Object],(,[object Object],,,[object Object],,,[object Object],,,[object Object],);
+}
 
-,[object Object],
-,[object Object],Starting Mileage,[object Object],
-,[object Object],
-,[object Object],
+,[object Object], {
+    ,[object Object],: center;
+    ,[object Object],: ,[object Object],;
+}
 
-,[object Object],[object Object],
+,[object Object], {
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object], solid ,[object Object],;
+    ,[object Object],: ,[object Object],;
+}
 
-,[object Object],Add Stop,[object Object],
+,[object Object], {
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: none;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: white;
+    ,[object Object],: ,[object Object],;
+}
 
-,[object Object],
-,[object Object],Final Mileage,[object Object],
-,[object Object],
-,[object Object],Total: 0 miles,[object Object],
-,[object Object],
+,[object Object],[object Object], {
+    ,[object Object],: ,[object Object],;
+}
 
-,[object Object],End Day,[object Object],
-,[object Object],Export PDF,[object Object],
+,[object Object], {
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: ,[object Object],;
+}
 
-,[object Object],
+,[object Object], {
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: bold;
+    ,[object Object],: center;
+    ,[object Object],: ,[object Object],;
+}
 
-,[object Object],[object Object],
+,[object Object], {
+    ,[object Object],: ,[object Object],;
+    ,[object Object],: none;
+}
+</,[object Object],>
+</,[object Object],>
 
-,[object Object],[object Object],[object Object],
+<,[object Object],>
+<,[object Object], ,[object Object],=,[object Object],>
 
-,[object Object],
-,[object Object],
+<,[object Object],>Daily Mileage Log</,[object Object],>
+<,[object Object], ,[object Object],=,[object Object],></,[object Object],>
+
+<,[object Object], ,[object Object],=,[object Object],>
+<,[object Object],>Starting Mileage</,[object Object],>
+<,[object Object], ,[object Object],=,[object Object], ,[object Object],=,[object Object],>
+</,[object Object],>
+
+<,[object Object], ,[object Object],=,[object Object],></,[object Object],>
+
+<,[object Object], ,[object Object],=,[object Object],>Add Stop</,[object Object],>
+
+<,[object Object], ,[object Object],=,[object Object],>
+<,[object Object],>Final Mileage</,[object Object],>
+<,[object Object], ,[object Object],=,[object Object], ,[object Object],=,[object Object],>
+<,[object Object], ,[object Object],=,[object Object], ,[object Object],=,[object Object],>Total: 0 miles</,[object Object],>
+</,[object Object],>
+
+<,[object Object], ,[object Object],=,[object Object],>End Day</,[object Object],>
+<,[object Object], ,[object Object],=,[object Object],>Export PDF</,[object Object],>
+
+</,[object Object],>
+
+<,[object Object], ,[object Object],=,[object Object],></,[object Object],>
+
+<,[object Object],>
+,[object Object], today = ,[object Object], ,[object Object],().,[object Object],();
+,[object Object],.,[object Object],(,[object Object],).,[object Object], = ,[object Object], + today;
+
+,[object Object], locked = ,[object Object],;
+,[object Object], stopCount = ,[object Object],;
+
+,[object Object], ,[object Object],(,[object Object],) {
+    ,[object Object], data = {
+        ,[object Object],: startMileage.,[object Object],,
+        ,[object Object],: [...,[object Object],.,[object Object],(,[object Object],)].,[object Object],(,[object Object], i.,[object Object],),
+        ,[object Object],: finalMileage.,[object Object],,
+        ,[object Object],: locked
+    };
+    ,[object Object],.,[object Object],(,[object Object],, ,[object Object],.,[object Object],(data));
+}
+
+,[object Object], ,[object Object],(,[object Object],) {
+    ,[object Object], saved = ,[object Object],.,[object Object],(,[object Object],);
+    ,[object Object], (!saved) {
+        ,[object Object],();
+        ,[object Object],;
+    }
+
+    ,[object Object], data = ,[object Object],.,[object Object],(saved);
+    startMileage.,[object Object], = data.,[object Object], || ,[object Object],;
+    finalMileage.,[object Object], = data.,[object Object], || ,[object Object],;
+    locked = data.,[object Object], || ,[object Object],;
+
+    ,[object Object], (data.,[object Object],.,[object Object], === ,[object Object],) ,[object Object],();
+    data.,[object Object],.,[object Object],(,[object Object], ,[object Object],(val));
+
+    ,[object Object], (locked) ,[object Object],();
+    ,[object Object],();
+}
+
+,[object Object], ,[object Object],(,[object Object],) {
+    stopCount++;
+    ,[object Object], div = ,[object Object],.,[object Object],(,[object Object],);
+    div.,[object Object], = ,[object Object],;
+
+    div.,[object Object], = ,[object Object],;
+
+    ,[object Object],.,[object Object],(,[object Object],).,[object Object],(div);
+    div.,[object Object],(,[object Object],).,[object Object],(,[object Object],, calculate);
+    ,[object Object],();
+}
+
+,[object Object], ,[object Object],(,[object Object],) {
+    ,[object Object], start = ,[object Object],(startMileage.,[object Object],);
+    ,[object Object], previous = start;
+    ,[object Object], stops = ,[object Object],.,[object Object],(,[object Object],);
+
+    stops.,[object Object],(,[object Object], {
+        ,[object Object], current = ,[object Object],(input.,[object Object],);
+
+        ,[object Object], (current && current < previous) {
+            input.,[object Object], = previous;
+            ,[object Object],;
+        }
+
+        ,[object Object], diff = current - previous;
+        ,[object Object],.,[object Object],(,[object Object], + (index + ,[object Object],)).,[object Object], =
+            current ? ,[object Object], + diff : ,[object Object],;
+
+        previous = current || previous;
+    });
+
+    ,[object Object], final = ,[object Object],(finalMileage.,[object Object],);
+    ,[object Object], (final && final >= start) {
+        totalDisplay.,[object Object], = ,[object Object], + (final - start) + ,[object Object],;
+    }
+
+    ,[object Object],();
+}
+
+,[object Object], ,[object Object],(,[object Object],) {
+    locked = ,[object Object],;
+    ,[object Object],.,[object Object],.,[object Object],.,[object Object],(,[object Object],);
+    addStopBtn.,[object Object], = ,[object Object],;
+    endDayBtn.,[object Object], = ,[object Object],;
+}
+
+addStopBtn.,[object Object],(,[object Object],, addStop);
+startMileage.,[object Object],(,[object Object],, calculate);
+finalMileage.,[object Object],(,[object Object],, calculate);
+
+endDayBtn.,[object Object],(,[object Object],, ,[object Object], {
+    ,[object Object],();
+    ,[object Object],();
+});
+
+exportBtn.,[object Object],(,[object Object],, ,[object Object], {
+    ,[object Object],().,[object Object],(,[object Object],.,[object Object],).,[object Object],(,[object Object], + today + ,[object Object],);
+});
+
+,[object Object],();
+</,[object Object],>
+
+</,[object Object],>
+</,[object Object],>
